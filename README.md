@@ -57,6 +57,21 @@ Linuxコマンドマニュアル表示
 man <cmd>
 ```
 
+Docker イメージ未使用イメージ削除
+```
+docker rmi `docker images -q`
+```
+
+未使用ボリューム一括削除
+```
+docker volume prune
+```
+
+未使用ネットワーク削除
+```
+docker network prune
+```
+
 # Dockerfile instraction
 FROM, RUN, CMDが基本的に使用される
 
